@@ -169,7 +169,8 @@ class ConsumerStack(Stack):
         # Grant permissions to allow the function to receive messages from the queue.
         sqs_queue.grant_consume_messages(function)
 
-        # Grant permissions to allow the function to read messages from the queue and to write logs to Amazon CloudWatch.
+        # Grant permissions to allow the function to read messages from the queue and to write logs to Amazon
+        # CloudWatch.
         function.add_to_role_policy(
             statement=iam.PolicyStatement(
                 actions=['sqs:ReceiveMessage'],
