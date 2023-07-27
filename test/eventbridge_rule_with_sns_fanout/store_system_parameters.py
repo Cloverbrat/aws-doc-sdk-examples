@@ -20,6 +20,7 @@ def generate_parameter_store_values(account_id_mappings):
             print(f"Parameter '{key}' does not exist. Creating a new parameter...")
             ssm.put_parameter(Name=key, Value=value, Type='SecureString')
 
+
 if __name__ == "__main__":
     # List of key-value pairs representing parameter names and their corresponding values
     mappings = [

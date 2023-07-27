@@ -1,2 +1,6 @@
 *__pycache__*
 cdk.out
+<<<<<<< HEAD
+=======
+store_system_params.py
+>>>>>>> 655c303bd (add config script to weathertop)
